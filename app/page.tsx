@@ -1,13 +1,12 @@
-import Image from "next/image";
-import header from "./components/header";
+import React from 'react';
 
-export default function Home() {
-  return (
-    <>
-    <header/>
-      
-     
-    </> 
-
-  );
+export default function Page() {
+    return(
+           <div>
+            Login Page
+            
+            </div>
+    )
 }
+
+

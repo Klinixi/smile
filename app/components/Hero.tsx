@@ -1,14 +1,25 @@
-// components/Hero.js
-'use client';
+import React from "react";
 
-export default function Hero() {
+const HeroSalonCoiffure = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-screen flex items-center justify-center">
-      <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-lg text-center max-w-2xl">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Bienvenue chez Smile Coiffure</h1>
-        <p className="text-gray-600 mb-6">Prenez soin de vos cheveux avec nos experts coiffure.</p>
-        <a href="/rdv" className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">Prendre un Rendez-vous</a>
+    <section 
+      className="relative bg-cover bg-center h-screen flex items-center justify-center" 
+      style={{ backgroundImage: "url('/image_2.jpg')" }}
+    >
+      <div className="bg-pink bg-opacity-50 p-8 rounded-2xl text-white max-w-2xl text-center">
+        <h1 className="text-4xl font-bold mb-4">Bienvenue dans notre Salon de Coiffure</h1>
+        <p className="text-lg mb-6">
+          Avec Smile Coiffure, retrouvez le sourire. N'attendez-plus! Prenez soin de vous avec nos experts.
+        </p>
       </div>
+
+      {/* Image d'arrière-plan supplémentaire */}
+      <div 
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center" 
+        style={{ backgroundImage: "url('/images/your-background-image.jpg')", opacity: 0.3 }}
+      ></div>
     </section>
   );
-}
+};
+
+export default HeroSalonCoiffure;
